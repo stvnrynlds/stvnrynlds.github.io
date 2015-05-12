@@ -1,0 +1,7 @@
+markdown: redcarpet
+highlighter: false
+destination: _site
+include: ['.htaccess']
+sass:
+   sass_dir: styles/_partials
+   style: :compressed
