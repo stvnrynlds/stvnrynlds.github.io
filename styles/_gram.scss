@@ -1,0 +1,107 @@
+$unit: 12px;
+$c-back: #fff;
+$c-fore: #232323;
+
+body {
+  text-align: center;
+  margin-top: 35vh;
+}
+
+.str-monogram {
+  transform-style: preserve-3d;
+  display: inline-block;
+  position: relative;
+  width: $unit * 14;
+  height: $unit * 14;
+  background: $c-back;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 $unit $c-fore;
+  border-radius: $unit * 8;
+}
+
+.gram {
+  position: absolute;
+  top: $unit * 3.5;
+  left: $unit * 4;
+  z-index: 20;
+}
+
+.s-1, .s-2, .r, *:before, *:after {
+  content: '';
+  position: absolute;
+  display: block;
+  opacity: 1;
+  background: $c-fore;
+}
+
+.s-1 {
+  width: $unit * 4;
+  top: $unit * 2;
+  left: $unit * 2;
+  height: $unit * 3;
+  border-radius: 0 ($unit*2) ($unit*2) 0;
+}
+
+.s-1:after {
+  width: $unit * 4;
+  height: $unit;
+  top: $unit;
+  left: -$unit;
+  border-radius: $unit;
+  background: $c-back;
+}
+
+.s-1:before {
+  width: $unit * 3;
+  height: $unit;
+  top: 2*$unit;
+  left: -2*$unit;
+}
+
+.s-2 {
+  width: $unit * 4;
+  top: 0;
+  left: 0;
+  height: $unit * 3;
+  border-radius: ($unit*2) 0 0 ($unit*2);
+}
+
+.s-2:after {
+  width: $unit * 4;
+  height: $unit;
+  top: $unit;
+  left: $unit;
+  border-radius: $unit;
+  background: $c-back;
+}
+
+.s-2:before {
+  width: $unit * 3;
+  height: $unit;
+  top: 0;
+  left: $unit * 3;
+}
+
+.r {
+  width: $unit * 3;
+  height: $unit * 3;
+  border-radius: 0 0 0 ($unit * 3);
+  top: $unit * 4;
+  left: $unit * 3;
+}
+
+.r:after {
+  height: $unit * 4;
+  width: $unit * 4;
+  border-radius: $unit * 2;
+  top: -2 * $unit;
+  left: $unit;
+  background: $c-back;
+}
+
+.r:before {
+  width: $unit;
+  height: $unit * 3;
+  top: $unit 0;
+  left: $unit * -2;
+}
