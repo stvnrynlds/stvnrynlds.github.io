@@ -14,3 +14,6 @@ highlighter: rouge
 # Sass Settings
 sass:
    sass_dir: css/_sass
+
+# Blog
+permalink: /blog/:title/

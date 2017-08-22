@@ -2,17 +2,19 @@
 layout: post
 title:  "Setting up Camp with Jekyll"
 date:   2017-08-21 19:48:11 -0700
-categories: jekyll update
-permalink: /:year/:title/
+categories: jekyll dev 
+
 ---
 
-For a while, I've stood on the shore watching a swift river of Javascript frameworks rush by. It's time to jump in.
-
-But first, some liquid courage. Jekyll, don't fail me now.
+I'm 
 
 ![Down the hatch](http://i.imgur.com/M1pOYYa.gif)
 
 That's the stuff. Let's do this.
+
+## Why Jekyll?
+
+[Jekyll](https://jekyllrb.com/) is a static site generator (SSG) written in Ruby. 
 
 ## Topics to Cover
 
