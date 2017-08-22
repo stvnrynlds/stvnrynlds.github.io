@@ -2,10 +2,12 @@
 title: /blog
 email: work@stevenreynolds.com
 description: > # this means to ignore newlines until "baseurl:"
-  /blog is by Steven Reynolds, a designer and developer in California. Husband to Amanda, dad to my twins, intern to my cats.
+  Steven is a front end developer and designer in California.
+  He explains technical things here. Husband, dad, and cat dad.
 url: "http://stevenreynolds.me" # the base hostname & protocol for your site
-twitter_username: stvnrynlds
-github_username:  stvnrynlds
+twitter_username:   stvnrynlds
+github_username:    stvnrynlds
+dribbble_username:  stevenreynolds
 
 # Build settings
 markdown: kramdown
@@ -15,5 +17,5 @@ highlighter: rouge
 sass:
    sass_dir: css/_sass
 
-# Blog
+# Blog Settings
 permalink: /blog/:title/
