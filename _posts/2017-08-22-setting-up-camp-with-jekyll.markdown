@@ -6,11 +6,11 @@ categories: jekyll dev
 
 ---
 
-So here's the thing: it's easier, much easier, to think about doing something rather than _actually_ doing something. It will always be infinitely cheaper and safer to do nothing. Nothing can't be critiqued. Nothing can't challenge you. Nothing can't fail.
+It's easier, _much easier_, to think than to do. For people who are lay
 
-People have written books about this (probably, I haven't read them) and I bet some pretty passionate blog posts and maybe like a motivational poster too.
+It will always be infinitely cheaper and safer to do nothing. Nothing can't be critiqued. Nothing can't challenge you. Nothing can't fail.
 
-This blog exists because I've caught myself believing that having ideas is an accomplishment, when it's really an opportunity that needs some inspection and (if it passes) some buy-in.
+I've caught myself believing that an idea is an accomplishment, but it's not. There is [literally](https://www.reddit.com/r/AppIdeas/) no shortage of ideas.
 
 [Creativity is a habit](http://a.co/fMUJYmc) (I haven't finished that book either but it's probably good) and at least if I get this down I will have one good habit.
 
