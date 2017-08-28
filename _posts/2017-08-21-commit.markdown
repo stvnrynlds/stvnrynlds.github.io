@@ -16,5 +16,3 @@ The flipside is: no stress, no movement. In life that means no relationships, no
 How do you move from thinking to doing? I've found asking that question just widens the gap between ideas and execution. So, stop thinking about it and try. Commit. Try and work until it's either what you want or it breaks and you've learned. Everything costs something, and you won't know your worth until you commit.
 
 Before I build something big, I need to make something small. So I've made this blog, as a catalyst for bigger and better things. In future posts I'll be talking about those bigger things, but right now I just need to start.
-
-_Next Time:  Breaking Ground with Jekyll_
