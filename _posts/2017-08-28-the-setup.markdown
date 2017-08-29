@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "The Setup"
+date:   2017-08-26 9:00:00 -0700
+categories: workflow
+---
+
+Over the next 6 months (and probably more) I'm going to be writing about the process of creating a for-reals no-lie bona-fide React app that just might fill a real need. I'll be documenting the steps I take here so you can follow along or laugh at me. Either way, I'll be learning.
+
+While I work on the front end of this app, my buddy [Mark Holmes](http://mark.party/) will spearhead the back end. (Read his easy-to-follow post on [configuring a Digital Ocean droplet to run Ghost](http://mark.party/up-and-running-with-ghost/).)
+
+But before all that, we need to get our development environment set up. Feel free to follow this to a T, or use it as a springboard.
+
+_Note: I'm on a 27" iMac (running macOS Sierra as of this writing). Everything that follows in these posts will be from that point of view._
+
+## The Terminal: iTerm2
+An indispensible tool for modern web development, and incredibly powerful if you take the time to learn it. Mac has a terminal built in, which is good. But iTerm2 is better.
+
+0. [Download iTerm2](https://www.iterm2.com/). It's free, but if you're making money from it, so should they. You'll want to unzip `iTerm.app` and place that bad boy in your `Applications` folder.
+0. Launch iTerm2. It should look like a humble floating terminal window right now.
+0. Open `Preferences` from the menubar (shortcut: `⌘,`).
+0. Go to `Profiles`, select `Default`, and select the `Window` tab. Set the blur and opacity to your liking. Set "Style" to "Full-Width Top of Screen". For columns and rows, I set 80 and 25 respectively.
+0. Next select the `Keys` tab, check "A hotkey opens a dedicated window with this profile", and click the "Configure Hotkey Window" button. My hotkey is ``⌘` ``: just close enough to `⌘⇥` to make it familiar. Check "Pin hotkey window", "Animate showing and hiding", and for "On Dock icon click:" choose "Show this Hotkey Window." Press "OK" and exit preferences.
+0. Hit your hotkey. Boom. Down slides your terminal like you're Iron Man on a budget.
+
+I don't have time here for a terminal tutorial, but if you want to learn more try out these resources:
+- ["Learn the Command Line" course at CodeCademy](https://www.codecademy.com/learn/learn-the-command-line)
+- ["Command Line Crash Course" from LearnCodeTheHardWay](https://learnpythonthehardway.org/book/appendixa.html)
+
+## The Editor: Sublime Text 3
+I've worked with [Atom](https://atom.io/), [VS Code](https://code.visualstudio.com/), [Brackets](http://brackets.io/), and they're all great, but I keep missing the familiarity and speed of Sublime. Also, [Wes Bos uses it](http://wesbos.com/uses/).
+
+0. First, [download Sublime Text 3](https://www.sublimetext.com/3), and fire it up.
+0. [Install Package Control](https://packagecontrol.io/installation#st3). This will allow you to add themes, plugins, etc. Just paste the code on the install page into Sublime's console (accessible via `` ⌃` `` or from `View > Show Console`).
+    
+    ``` python
+import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
+```
+0. Once that finishes installing, hit `⌘⇧P` (or `Tools > Command Palette...`) to open the Command Palette. Type "install" to bring up the suggestion "Package Control: Install Package". This is the feature you just installed. Hit enter. The Command Palette will disappear briefly, then reappear with a list of packages.
+0. First off, let's get a theme. [Material Theme](https://github.com/equinusocio/material-theme) by equinusocio is popular and my personal favorite. Install it by finding it in the Command Palette and hitting enter.
+
+A few more packages I like:
+- [Emmet](https://github.com/sergeche/emmet-sublime): This could be its own post. You'll wonder why you ever typed anything out ever again.
+- [GitGutter](https://github.com/jisaacks/GitGutter): Marks lines with your Git diff in the Sublime gutter.
+- [Color Highlighter](https://github.com/Monnoroch/ColorHighlighter): Shows a preview of your colors inline with your code. Helpful if you don't have [synesthesia](https://en.wikipedia.org/wiki/Synesthesia).
+- [SideBarEnhancements](https://github.com/SideBarEnhancements-org/SideBarEnhancements): Tons of additional file management options right from your sidebar. 
+- And, of course, any syntax highlighting packages you might need (for our needs: Babel, Sass, JSX).
+
+One last thing: you may find yourself cruising on the terminal and wishing you could just type:
+
+``` sh
+subl .
+```
+
+and open the directory in Sublime. To do that, just run:
+
+``` sh
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+```
+
+You also might see a prompt to purchase a license occasionally while using Sublime. You'll know when you ought to have a license. A good rule of thumb is if you're [presenting at a React conference](https://youtu.be/xsSnOQynTHs?t=5m45s), you should have one.
+
+## Next Week:
+
+We'll walk through what it takes to set up a modern Javascript development environment.
