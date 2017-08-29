@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Setup"
-date:   2017-08-26 9:00:00 -0700
+date:   2017-08-28 9:00:00 -0700
 categories: workflow
 ---
 
@@ -37,7 +37,7 @@ I've worked with [Atom](https://atom.io/), [VS Code](https://code.visualstudio.c
 import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)
 ```
 0. Once that finishes installing, hit `⌘⇧P` (or `Tools > Command Palette...`) to open the Command Palette. Type "install" to bring up the suggestion "Package Control: Install Package". This is the feature you just installed. Hit enter. The Command Palette will disappear briefly, then reappear with a list of packages.
-0. First off, let's get a theme. [Material Theme](https://github.com/equinusocio/material-theme) by equinusocio is popular and my personal favorite. Install it by finding it in the Command Palette and hitting enter.
+0. Install a theme. [Material Theme](https://github.com/equinusocio/material-theme) by equinusocio is popular and my personal favorite. Install it by finding it in the Command Palette and hitting enter.
 
 A few more packages I like:
 - [Emmet](https://github.com/sergeche/emmet-sublime): This could be its own post. You'll wonder why you ever typed anything out ever again.
@@ -46,17 +46,19 @@ A few more packages I like:
 - [SideBarEnhancements](https://github.com/SideBarEnhancements-org/SideBarEnhancements): Tons of additional file management options right from your sidebar. 
 - And, of course, any syntax highlighting packages you might need (for our needs: Babel, Sass, JSX).
 
-One last thing: you may find yourself cruising on the terminal and wishing you could just type:
-
-``` sh
-subl .
-```
-
-and open the directory in Sublime. To do that, just run:
+What if you're cruising on the terminal want to open the current directory in sublime? Just run:
 
 ``` sh
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
 ```
+
+Now you can open any file or folder with a simple:
+
+``` sh
+subl . // open `current directory
+subl your_file.txt // open specific file
+```
+
 
 You also might see a prompt to purchase a license occasionally while using Sublime. You'll know when you ought to have a license. A good rule of thumb is if you're [presenting at a React conference](https://youtu.be/xsSnOQynTHs?t=5m45s), you should have one.
 
