@@ -1,0 +1,25 @@
+---
+---
+
+$sans: "Karla", sans-serif;
+$accent: #3e999f;
+$dark: #172326;
+$offwhite: #e8eded;
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #e8eded;
+	font-family: $sans;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
