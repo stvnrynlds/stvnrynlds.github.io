@@ -1,5 +1,6 @@
 # Site settings
-title: /blog
+title: Steven Reynolds
+blogtitle: /blog
 email: work@stevenreynolds.com
 description: > # this means to ignore newlines until "baseurl:"
   Steven is a front end developer and designer in California.
