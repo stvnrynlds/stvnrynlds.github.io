@@ -17,6 +17,7 @@
     float: left;
 }
 
+
 .site-nav {
     float: right;
     line-height:  $spacing-unit * 2.5;
@@ -175,6 +176,8 @@
 }
 
 .post-meta {
+    text-transform: uppercase;
+    letter-spacing: .1em;
     font-size: $small-font-size;
     color: $grey-color;
 }
@@ -207,10 +210,14 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: 1.125em;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        margin-top: 1.75em;
+        margin-bottom: .75em;
 
         @include media-query($on-laptop) {
-            font-size: 28px;
+            font-size: 1em;
         }
     }
 

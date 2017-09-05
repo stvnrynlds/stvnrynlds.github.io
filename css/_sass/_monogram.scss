@@ -1,24 +1,24 @@
-$unit: 2px;
-$c-back: $brand-color;
-$c-fore: #fff;
+$logo-unit: 2px;
+$logo-bg-color: #fff;
+$logo-fg-color: $logo-color;
 
 .str-monogram {
   transform-style: preserve-3d;
   display: inline-block;
   vertical-align: text-top;
   position: relative;
-  width: $unit * 14;
-  height: $unit * 14;
-  box-shadow: 0 0 0 $unit $c-fore;
-  background: $c-back;
+  width: $logo-unit * 14;
+  height: $logo-unit * 14;
+  box-shadow: inset 0 0 0 $logo-unit $logo-fg-color;
+  background: $logo-bg-color;
   overflow: hidden;
-  border-radius: $unit * 22;
+  border-radius: $logo-unit * 22;
 }
 
 .gram {
   position: absolute;
-  top: $unit * 3.5;
-  left: $unit * 4;
+  top: $logo-unit * 3.5;
+  left: $logo-unit * 4;
   z-index: 20;
 }
 
@@ -27,77 +27,77 @@ $c-fore: #fff;
   position: absolute;
   display: block;
   opacity: 1;
-  background: $c-fore;
+  background: $logo-fg-color;
 }
 
 .s-1 {
-  width: $unit * 4;
-  top: $unit * 2;
-  left: $unit * 2;
-  height: $unit * 3;
-  border-radius: 0 ($unit*2) ($unit*2) 0;
+  width: $logo-unit * 4;
+  top: $logo-unit * 2;
+  left: $logo-unit * 2;
+  height: $logo-unit * 3;
+  border-radius: 0 ($logo-unit*2) ($logo-unit*2) 0;
 }
 
 .s-1:after {
-  width: $unit * 4;
-  height: $unit;
-  top: $unit;
-  left: -$unit;
-  border-radius: $unit;
-  background: $c-back;
+  width: $logo-unit * 4;
+  height: $logo-unit;
+  top: $logo-unit;
+  left: -$logo-unit;
+  border-radius: $logo-unit;
+  background: $logo-bg-color;
 }
 
 .s-1:before {
-  width: $unit * 3;
-  height: $unit;
-  top: 2*$unit;
-  left: -2*$unit;
+  width: $logo-unit * 3;
+  height: $logo-unit;
+  top: 2*$logo-unit;
+  left: -2*$logo-unit;
 }
 
 .s-2 {
-  width: $unit * 4;
-  height: $unit * 3;
+  width: $logo-unit * 4;
+  height: $logo-unit * 3;
   top: 0;
   left: 0;
-  border-radius: ($unit * 2) 0 0 ($unit * 2);
+  border-radius: ($logo-unit * 2) 0 0 ($logo-unit * 2);
 }
 
 .s-2:after {
-  width: $unit * 4;
-  height: $unit;
-  top: $unit;
-  left: $unit;
-  border-radius: $unit;
-  background: $c-back;
+  width: $logo-unit * 4;
+  height: $logo-unit;
+  top: $logo-unit;
+  left: $logo-unit;
+  border-radius: $logo-unit;
+  background: $logo-bg-color;
 }
 
 .s-2:before {
-  width: $unit * 3;
-  height: $unit;
+  width: $logo-unit * 3;
+  height: $logo-unit;
   top: 0;
-  left: $unit * 3;
+  left: $logo-unit * 3;
 }
 
 .r {
-  width: $unit * 3;
-  height: $unit * 3;
-  border-radius: 0 0 0 ($unit * 3);
-  top: $unit * 4;
-  left: $unit * 3;
+  width: $logo-unit * 3;
+  height: $logo-unit * 3;
+  border-radius: 0 0 0 ($logo-unit * 3);
+  top: $logo-unit * 4;
+  left: $logo-unit * 3;
 }
 
 .r:after {
-  height: $unit * 4;
-  width: $unit * 4;
-  border-radius: $unit * 2;
-  top: -2 * $unit;
-  left: $unit;
-  background: $c-back;
+  height: $logo-unit * 4;
+  width: $logo-unit * 4;
+  border-radius: $logo-unit * 2;
+  top: -2 * $logo-unit;
+  left: $logo-unit;
+  background: $logo-bg-color;
 }
 
 .r:before {
-  width: $unit;
-  height: $unit * 3;
-  top: $unit 0;
-  left: $unit * -2;
+  width: $logo-unit;
+  height: $logo-unit * 3;
+  top: $logo-unit 0;
+  left: $logo-unit * -2;
 }

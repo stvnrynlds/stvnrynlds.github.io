@@ -1,25 +1,40 @@
 ---
 ---
 
-$sans: "Karla", sans-serif;
-$accent: #3e999f;
-$dark: #172326;
-$offwhite: #e8eded;
+// https://chriskempson.github.io/base16/
+// base16-tomorrow.css
+
+
+$sans-font: "Karla", sans-serif;
+$serif-font: "Merriweather", serif;
+$brand-color: #3e999f;
+$dark: #343232;
+$offwhite: #F7E9BD;
+$white: #fff;
+
+$link-color: $brand-color;
+$text-color: #444;
+$bg-color: $white;
+$logo-color: $dark;
 
 html, body {
 	margin: 0;
 	padding: 0;
+   background: $bg-color;
+   height: 100%;
 }
 
 body {
-	background-color: #e8eded;
-	font-family: $sans;
+   font-family: $sans-font;
+   color: $text-color;
+   border-top: 10px solid #eee;
 }
 
 *, *:before, *:after {
 	box-sizing: border-box;
 }
 
-a {
-	text-decoration: none;
-}
+@import
+   "monogram2",
+   "home"
+;

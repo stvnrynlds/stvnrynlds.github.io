@@ -1,72 +1,41 @@
 ---
-layout: base
+layout: home
 ---
+<main class="intro">
+<header>
+{% include monogram.html %}
+<h1>Steven Reynolds</h1>
+<p>Front-End Developer<br>
+  <a href="mailto:hi@stevenreynolds.me">hi@stevenreynolds.me</a>
+</p>
+</header>
 
+<h3>Nutshell</h3>
+<p>A design-minded developer in California. Makes things with Javascript, HTML &amp; CSS. Currently building UIs at <a href="https://nuance.com/" target="_blank">Nuance</a>. Previously at <a href="http://ruhm.com/about" target="_blank">RUHM Marketing</a> and <a href="https://biola.edu/" target="_blank">Biola University</a>. Bookworm, illustrator, husband, dad of twins.</p>
 
-<h2>Projects</h2>
+<h3>Projects</h3>
+<ul>
+  <li><a href="http://parklanepenthouses.com/" target="_blank">Park Lane Penthouses</a> <span class="meta">Design, Development</span></li>
+  <li><a href="http://montageresidenceskapaluabay.com/" target="_blank">Montage Kapalua Bay</a> <span class="meta">Design, Development</span></li>
+  <li><a href="https://cct.biola.edu/issues/mind-your-heart/" target="_blank">CCT: Mind Your Heart</a> <span class="meta">Illustration</span></li>
+</ul>
 
-<article>
-  <a href="http://montageresidenceskapaluabay.com/" target="_blank" class="work-item">
-    <h3 class="work-item--title">Montage Kapalua Bay</h3>
-    <ul class="work-item--areas">
-      <li>Custom WordPress Theme</li>
-      <li>UI Design</li>
-      <li>HTML</li>
-      <li>SASS</li>
-      <li>jQuery</li>
-    </ul>
-  </a>
-</article>
+<h3>Writing</h3>
+<ul>
+  {% for post in site.posts limit:3 %}
+    <li>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="meta"> {{ post.date | date: "%b %-d" }}</span>
+    <li>
+  {% endfor %}
+  <li><a href="/blog/">More&hellip;</a></li>
+</ul>
 
-<article>
-  <a href="http://parklanepenthouses.com/" target="_blank" class="work-item">
-    <h3 class="work-item--title">Park Lane Penthouses</h3>
-    <ul class="work-item--areas">
-      <li>Custom WordPress Theme</li>
-      <li>UI Design</li>
-      <li>HTML</li>
-      <li>SASS</li>
-      <li>jQuery</li>
-    </ul>
-  </a>
-</article>
-
-<article>
-  <a href="http://open.biola.edu/" target="_blank" class="work-item">
-    <h3 class="work-item--title">Open Biola</h3>
-    <ul class="work-item--areas">
-      <li>Branding</li>
-      <li>UI Design</li>
-      <li>HTML</li>
-      <li>SASS</li>
-      <li>jQuery</li>
-    </ul>
-  </a>
-</article>
-
-<article>
-  <a href="http://ruhm.com/" target="_blank" class="work-item">
-    <h3 class="work-item--title">RUHM</h3>
-    <ul class="work-item--areas">
-      <li>PHP Development</li>
-      <li>UI Design</li>
-      <li>HTML</li>
-      <li>SASS</li>
-      <li>jQuery</li>
-    </ul>
-  </a>
-</article>
-
-
-<article>
-  <a href="http://whittier.southlands.net/" target="_blank" class="work-item">
-    <h3 class="work-item--title">Southlands</h3>
-    <ul class="work-item--areas">
-      <li>PHP Development</li>
-      <li>UI Design</li>
-      <li>HTML</li>
-      <li>SASS</li>
-      <li>jQuery</li>
-    </ul>
-  </a>
-</article>
+<h3>Elsewhere</h3>
+<ul>
+  <li><a href="http://github.com/{{ site.github_username }}" target="_blank">GitHub</a></li>
+  <li><a href="http://dribbble.com/{{ site.dribbble_username }}" target="_blank">Dribbble</a></li>
+  <li><a href="http://codepen.io/{{ site.codepen_username }}" target="_blank">CodePen</a></li>
+  <li><a href="http://twitter.com/{{ site.twitter_username }}" target="_blank">Twitter</a></li>
+</ul>
+</main>

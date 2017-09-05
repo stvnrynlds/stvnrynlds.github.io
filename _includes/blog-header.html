@@ -3,15 +3,15 @@
   <div class="wrapper">
 
   
-    <a class="site-title" href="/">{% include monogram.html %}</a> <a href="/blog/">{{ site.blogtitle }}</a>
+    <a class="site-title" href="/">{% include monogram.html %}</a> <a href="/blog/" class="site-title-blog">{{ site.blogtitle }}</a>
 
-      <div class="trigger">
+<!--       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
           {% endif %}
         {% endfor %}
-      </div>
+      </div> -->
     </nav>
 
   </div>

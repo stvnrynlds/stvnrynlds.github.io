@@ -3,11 +3,12 @@ title: Steven Reynolds
 blogtitle: /blog
 email: work@stevenreynolds.com
 description: > # this means to ignore newlines until "baseurl:"
-  Steven is a front end developer and designer in California.
+  Steven does front end everything in California.
   He explains technical things here. Husband, dad, and cat dad.
 url: "http://stevenreynolds.me" # the base hostname & protocol for your site
 twitter_username:   stvnrynlds
 github_username:    stvnrynlds
+codepen_username:   stvnrynlds
 dribbble_username:  stevenreynolds
 
 # Build settings
