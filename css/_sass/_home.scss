@@ -22,18 +22,6 @@ header {
    font-size: 1.125em;
 }
 
-@media only screen and (min-width: 640px) {
-   .site-wrapper {
-      padding: 3em;
-   }
-
-   h1 + p,
-   h3 + p,
-   ul {
-      margin-left: .5em;
-   }
-}
-
 h1 {
    font-size: 1em;
    line-height: 1.4;
@@ -80,4 +68,16 @@ li {
    text-transform: uppercase;
    letter-spacing: .05em;
    margin-left: .25em;
+}
+
+@media only screen and (min-width: 640px) {
+   .site-wrapper {
+      padding: 3em;
+   }
+
+   h1 + p,
+   h3 + p,
+   ul {
+      margin-left: .5em;
+   }
 }
