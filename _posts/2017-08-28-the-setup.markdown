@@ -27,6 +27,16 @@ I don't have time here for a terminal tutorial, but if you want to learn more tr
 - ["Learn the Command Line" course at CodeCademy](https://www.codecademy.com/learn/learn-the-command-line)
 - ["Command Line Crash Course" from LearnCodeTheHardWay](https://learnpythonthehardway.org/book/appendixa.html)
 
+## The Version Control System: Git
+If you don't know how to use even the basics of Git, remedy that immediately. The first step is installing it on your system. On a mac this is easy:
+
+0. Open your terminal and type `git`.
+0. On Mavericks (10.9) or above, you will be prompted to install it.
+
+If that doesn't work, you can try either installing it via the [OSX installer](https://git-scm.com/download/mac) or by first installing [Homebrew](https://brew.sh/) and then installing Git with `brew install git`.
+
+Once it's installed, run through [these videos](https://git-scm.com/videos) for an introduction to Git.
+
 ## The Editor: Sublime Text 3
 I've worked with [Atom](https://atom.io/), [VS Code](https://code.visualstudio.com/), [Brackets](http://brackets.io/), and they're all great, but I keep missing the familiarity and speed of Sublime. Also, [Wes Bos uses it](http://wesbos.com/uses/).
 

@@ -91,12 +91,11 @@ h1, h2, h3, h4, h5, h6 {
  * Blockquotes
  */
 blockquote {
+    margin: ($spacing-unit / 2) 0;
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    border-left: 2px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+    font-size: 16px;
 
     > :last-child {
         margin-bottom: 0;

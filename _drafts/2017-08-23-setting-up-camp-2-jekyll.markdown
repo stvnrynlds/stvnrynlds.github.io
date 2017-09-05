@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setting Up Camp, Pt. 2: Jekyll"
+title:  "React from the Shallow End"
 date:   2017-08-23 9:00:00 -0700
 categories: jekyll github dev
 ---
