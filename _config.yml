@@ -18,6 +18,7 @@ highlighter: rouge
 # Sass Settings
 sass:
    sass_dir: css/_sass
+   style: compressed
 
 # Blog Settings
 permalink: /blog/:title/

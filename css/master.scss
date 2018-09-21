@@ -7,15 +7,15 @@
 
 $sans-font: "Karla", sans-serif;
 $serif-font: "Merriweather", serif;
-$brand-color: #3e999f;
-$dark: #343232;
+$brand-color: cadetblue;
+$dark: darkslategray;
 $offwhite: #F7E9BD;
 $white: #fff;
 
 $link-color: $brand-color;
-$text-color: #444;
+$text-color: darkslategray;
 $bg-color: $white;
-$logo-color: $dark;
+$logo-color: blue;
 
 html, body {
 	margin: 0;
@@ -27,7 +27,7 @@ html, body {
 body {
    font-family: $sans-font;
    color: $text-color;
-   border-top: 10px solid #eee;
+   border-top: 10px solid whitesmoke;
 }
 
 *, *:before, *:after {

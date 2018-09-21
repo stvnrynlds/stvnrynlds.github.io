@@ -8,7 +8,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-   color: darken($link-color, 10%);
+   color: darkslategray;
    box-shadow: inset 0 -.5em 0 0 #eee;
 }
 
@@ -50,6 +50,10 @@ p {
    line-height: 1.4;
 }
 
+s {
+    color: rgba(darkslategray, .5);
+}
+
 ul {
    list-style: none;
    margin: 0;
@@ -64,7 +68,7 @@ li {
 .meta {
    display: inline-block;
    font-size: .75em;
-   color: #999;
+   color: rgba(darkslategray, .5);
    text-transform: uppercase;
    letter-spacing: .05em;
    margin-left: .25em;
