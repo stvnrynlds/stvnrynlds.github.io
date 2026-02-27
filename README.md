@@ -1,6 +1,4 @@
-# stevenreynolds.me
-
- Hosted at: stvnrynlds.github.io
+# stvnrynlds.github.io
 
 ## Setup
 
